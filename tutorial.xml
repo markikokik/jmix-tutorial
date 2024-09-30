@@ -7,7 +7,7 @@
     <group triggerOn="viewController">
         <stripeButton text="Jmix UI">
             <balloon>
-                <text>All ui modifications you can do there111</text>
+                <text>All ui modifications you can do there2</text>
                 <side>atLeft</side>
             </balloon>
         </stripeButton>
