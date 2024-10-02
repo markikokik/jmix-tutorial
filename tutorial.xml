@@ -4,10 +4,23 @@
   -->
 
 <tutorial>
+    <group triggerOn="jmixUiInspector">
+        <label text="Properties">
+            <balloon>
+                <text>Here all existing properties, that belong to selected element (element name)</text>
+                <side>atLeft</side>
+            </balloon>
+        </label>
+        <label text="Handlers">
+            <balloon>
+                <text>All activities that happens with component you can generate here. The result will scaffold java methods in controller</text>
+            </balloon>
+        </label>
+    </group>
     <group triggerOn="viewController">
         <stripeButton text="Jmix UI">
             <balloon>
-                <text>All ui modifications you can do there2</text>
+                <text>All ui modifications you can do there</text>
                 <side>atLeft</side>
             </balloon>
         </stripeButton>
@@ -25,17 +38,6 @@
                 <text>You can jump to the ui definition</text>
             </balloon>
         </actionButton>
-        <label text="Properties">
-            <balloon>
-                <text>Here all existing properties, that belong to selected element (element name)</text>
-                <side>atLeft</side>
-            </balloon>
-        </label>
-        <label text="Handlers">
-            <balloon>
-                <text>All activities that happens with component you can generate here. The result will scaffold java methods in controller</text>
-            </balloon>
-        </label>
     </group>
     <group triggerOn="viewDescriptor">
         <stripeButton text="Jmix UI">
@@ -64,17 +66,6 @@
                 <text>You can jump to the ui definition</text>
             </balloon>
         </actionButton>
-        <label text="Properties">
-            <balloon>
-                <text>Here all existing properties, that belong to selected element (element name)</text>
-                <side>atLeft</side>
-            </balloon>
-        </label>
-        <label text="Handlers">
-            <balloon>
-                <text>All activities that happens with component you can generate here. The result will scaffold java methods in controller</text>
-            </balloon>
-        </label>
     </group>
     <group triggerOn="entityDesigner">
         <actionButton text="Add" place="ToolbarDecorator">
