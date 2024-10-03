@@ -66,17 +66,6 @@
                 <text>You can jump to the ui definition</text>
             </balloon>
         </actionButton>
-      <label text="Properties">
-            <balloon>
-                <text>Here all existing properties, that belong to selected element (element name)</text>
-                <side>atLeft</side>
-            </balloon>
-        </label>
-        <label text="Handlers">
-            <balloon>
-                <text>All activities that happens with component you can generate here. The result will scaffold java methods in controller</text>
-            </balloon>
-        </label>
     </group>
     <group triggerOn="entityDesigner">
         <actionButton text="Add" place="ToolbarDecorator">
