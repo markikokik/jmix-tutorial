@@ -18,12 +18,12 @@
         </label>
     </group>
     <group triggerOn="viewController">
-        <stripeButton text="Jmix UI">
+        <actionButton text="Jmix UI">
             <balloon>
                 <text>All ui modifications you can do there</text>
                 <side>atLeft</side>
             </balloon>
-        </stripeButton>
+        </actionButton>
         <tree class="com.haulmont.jmixstudio.flowui.sd.designer.hierarchy.FlowComponentHierarchy">
             <balloon>
                 <text>Here is representation of XML UI Tree, there you can right-click on elements to do extra actions like create new elements, D and D elements in xml etc</text>
@@ -40,12 +40,12 @@
         </actionButton>
     </group>
     <group triggerOn="viewDescriptor">
-        <stripeButton text="Jmix UI">
+        <actionButton text="Jmix UI">
             <balloon>
                 <text>All ui modifications you can do there</text>
                 <side>atLeft</side>
             </balloon>
-        </stripeButton>
+        </actionButton>
         <tree class="com.haulmont.jmixstudio.flowui.sd.designer.hierarchy.FlowComponentHierarchy">
             <balloon>
                 <text>Here is representation of XML UI Tree, there you can right-click on elements to do extra actions like create new elements, D and D elements in xml etc</text>
