@@ -7,48 +7,38 @@
     <group triggerOn="jmixUiInspector">
         <label text="Properties">
             <balloon>
-                <text>Here all existing properties, that belong to selected element (element name)</text>
+                <text>Edit properties of the selected view element</text>
                 <side>atLeft</side>
             </balloon>
         </label>
         <label text="Handlers">
             <balloon>
-                <text>All activities that happens with component you can generate here. The result will scaffold java methods in controller</text>
+                <text>Generate event handlers and delegate methods for the selected component</text>
             </balloon>
         </label>
     </group>
     <group triggerOn="viewController">
-        <actionButton text="Jmix UI">
-            <balloon>
-                <text>All ui modifications you can do there</text>
-                <side>atLeft</side>
-            </balloon>
-        </actionButton>
-        <tree class="com.haulmont.jmixstudio.flowui.sd.designer.hierarchy.FlowComponentHierarchy">
-            <balloon>
-                <text>Here is representation of XML UI Tree, there you can right-click on elements to do extra actions like create new elements, D and D elements in xml etc</text>
-                <side>atLeft</side>
-            </balloon>
-            <highlighting>
-                <clearPreviousHighlights>false</clearPreviousHighlights>
-            </highlighting>
-        </tree>
         <actionButton text="Descriptor">
             <balloon>
-                <text>You can jump to the ui definition</text>
+                <text>Switch to the view XML descriptor</text>
+            </balloon>
+        </actionButton>
+        <actionButton text="Code Snippets">
+            <balloon>
+                <text>Use a collection of code snippets</text>
             </balloon>
         </actionButton>
     </group>
     <group triggerOn="viewDescriptor">
         <actionButton text="Jmix UI">
             <balloon>
-                <text>All ui modifications you can do there</text>
+                <text>Jmix UI tool window allows you to edit the view structure and component properties</text>
                 <side>atLeft</side>
             </balloon>
         </actionButton>
         <tree class="com.haulmont.jmixstudio.flowui.sd.designer.hierarchy.FlowComponentHierarchy">
             <balloon>
-                <text>Here is representation of XML UI Tree, there you can right-click on elements to do extra actions like create new elements, D and D elements in xml etc</text>
+                <text>Jmix UI structure panel displays the components tree. Use its context menu to manage components, drag-and-drop to reorder.</text>
                 <side>atLeft</side>
             </balloon>
             <highlighting>
@@ -57,20 +47,20 @@
         </tree>
         <actionButton text="Add Component...">
             <balloon>
-                <text>Simplified way to add ui component onto view descriptor</text>
+                <text>Open the components palette</text>
                 <side>atRight</side>
             </balloon>
         </actionButton>
         <actionButton text="Controller">
             <balloon>
-                <text>You can jump to the ui definition</text>
+                <text>Switch to the view controller</text>
             </balloon>
         </actionButton>
     </group>
     <group triggerOn="entityDesigner">
         <actionButton text="Add" place="ToolbarDecorator">
             <balloon>
-                <text>Create new attribute you can do here</text>
+                <text>Create a new attribute</text>
             </balloon>
             <highlighting>
                 <clearPreviousHighlights>false</clearPreviousHighlights>
@@ -78,7 +68,7 @@
         </actionButton>
         <actionButton text="Add to Views" place="ToolbarDecorator">
             <balloon>
-                <text>Here you can add attribute to entity's view</text>
+                <text>Add selected attribute to an existing UI view</text>
                 <side>above</side>
             </balloon>
             <highlighting>
@@ -87,22 +77,17 @@
         </actionButton>
         <actionButton text="Down" place="ToolbarDecorator">
             <balloon>
-                <text>Move up/down in the list</text>
+                <text>Move the attribute down</text>
                 <side>atRight</side>
             </balloon>
             <highlighting>
                 <clearPreviousHighlights>false</clearPreviousHighlights>
             </highlighting>
         </actionButton>
-<!--        <actionButton text="Up" place="ToolbarDecorator">-->
-<!--            <highlighting>-->
-<!--                <clearPreviousHighlights>false</clearPreviousHighlights>-->
-<!--            </highlighting>-->
-<!--        </actionButton>-->
         <actionButton text="Edit Localization Message"
                       containerClass="com.haulmont.jmixstudio.intellij.ui.entity.attr.propertiespanel.fieldfactory.JmixAttributeFormFieldFactory$1">
             <balloon>
-                <text>You can define translation (for all langs) for the entity here</text>
+                <text>Define localized caption for the entity attribute</text>
             </balloon>
             <highlighting>
                 <clearPreviousHighlights>false</clearPreviousHighlights>
@@ -110,7 +95,7 @@
         </actionButton>
         <tabLabel text="Text">
             <balloon>
-                <text>Here the result of entity design in source code</text>
+                <text>Switch to the entity source code</text>
                 <side>above</side>
             </balloon>
             <highlighting>
@@ -121,36 +106,22 @@
     <group triggerOn="entityText">
         <jmixActionButton text="Views">
             <balloon>
-                <text>Here you can jump to the view definitions or create new view for current entity</text>
+                <text>Jump to views displaying this entity or create a new view</text>
             </balloon>
         </jmixActionButton>
         <jmixActionButton text="Add Attribute">
             <balloon>
-                <text>By this action you can create new attribute without writing a code</text>
-            </balloon>
-        </jmixActionButton>
-        <jmixActionButton text="Add Attributes to Views">
-            <balloon>
-                <text>If new attribute is not part of the existing views, you can modify existing views from here and
-                    add new attribute for selected views
-                </text>
+                <text>Create new attribute using wizard</text>
             </balloon>
         </jmixActionButton>
         <tabLabel text="Designer">
             <balloon>
-                <text>Here you can edit your entity, add and edit attributes, modify entity’s properties</text>
+                <text>Swith to the entity designer</text>
                 <side>above</side>
             </balloon>
         </tabLabel>
     </group>
     <group triggerOn="jmixstart">
-        <actionButton text="New" place="JmixProjectTreeToolbar">
-            <balloon>
-                <text>To create view, entity and other basic Jmix components – you can click add action and select necessary target option.
-                </text>
-                <side>atRight</side>
-            </balloon>
-        </actionButton>
         <componentInContainer
                 place="com.haulmont.jmixstudio.intellij.ui.cubatree.toolwindow.JmixProjectViewPanel"
                 componentFieldPath="projectViewPane.getTree()"
@@ -159,12 +130,10 @@
                 <clearPreviousHighlights>false</clearPreviousHighlights>
             </highlighting>
             <balloon>
-                <text>Here you can access whole jmix project and create base components</text>
+                <text>Main elements of the project grouped by categories. Use the context menu to manage items.</text>
                 <side>atRight</side>
             </balloon>
         </componentInContainer>
-    </group>
-    <group triggerOn="appstart">
         <treeItem
                 place="com.haulmont.jmixstudio.intellij.ui.cubatree.toolwindow.JmixProjectViewPanel"
                 treeFieldPath="projectViewPane.getTree()"
@@ -176,26 +145,11 @@
             <balloon>
                 <text>Expand this node to see entities of your project</text>
                 <side>atRight</side>
-                <header>header</header>
-                <closeButton>true</closeButton>
-                <buttonText>Accept</buttonText>
             </balloon>
         </treeItem>
-        <actionButton text="Run">
-            <balloon>
-                <text><![CDATA[You can run your application at any time by pressing Run or Debug | <a href="http://ya.ru">yandex</a> | <code>code sample</code> | <action>jmix.installedAddonsAction</action> | <callback>test</callback>]]></text>
-                <header>header</header>
-                <closeButton/>
-                <buttonText>Fire</buttonText>
-            </balloon>
-        </actionButton>
         <actionButton text="New" place="JmixProjectTreeToolbar">
-            <highlighting>
-                <highlightInside>true</highlightInside>
-                <clearPreviousHighlights>false</clearPreviousHighlights>
-            </highlighting>
             <balloon>
-                <text>Start with creating a JPA Entity and UI views for it</text>
+                <text>Create new project elements: entities, views, beans, roles and so on</text>
                 <side>atRight</side>
             </balloon>
         </actionButton>
